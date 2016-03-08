@@ -1,0 +1,108 @@
+body,
+.navbar-default {
+	background-image: url('../images/navy_blue_@2X.png');
+	background-size: 600px 385px;
+}
+.navbar-default {
+	border: none;
+}
+.main-container {
+	top: 121px;
+	position: relative;
+	background-color: #FFF;
+	padding: 50px;
+	padding-bottom: 28px;
+}
+.navbar-brand {
+	display: none;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 4em;
+	margin-top: 0;
+}
+h2 {
+	font-weight: 400;
+	font-size: 2em;
+	margin-bottom: 4px;
+}
+
+.footer {
+	font-size: .7em;
+	padding-top: 6px;
+}
+.footer .copyright {
+	float: left;
+}
+.footer .links {
+	float: right;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 5em;
+	}
+	.container.header-container,
+	.container.main-container {
+		border: 8px solid #bdbdbd;
+	}
+	.navbar-default {
+		margin-top: 10px;
+	}
+	.navbar-default .container {
+		background-image: url('../images/perforated_white_leather_@2X.png');
+		background-size: 300px 300px;
+		border-bottom: none;
+		box-shadow: inset 0 -5px 9px -7px rgba(0,0,0,0.2);
+	}
+	.navbar-brand {
+		display: block;
+		height: 110px;
+		padding: 22px 30px;
+		top: 8px;
+    	position: relative;
+	}
+	.navbar-brand > img {
+		position: relative;
+		top: -134px;
+	}
+	.navbar>.container .navbar-brand, 
+	.navbar>.container-fluid .navbar-brand {
+		margin-left: 5px;
+	}
+	.navbar-default .navbar-nav>li>a,
+	.navbar-default .navbar-nav>li>a:focus,
+	.navbar-default .navbar-nav>li>a:hover {
+		color: #e8e8e8;
+		background-color: #252525;
+	}
+	.navbar-default .navbar-nav>li.active>a,
+	.navbar-default .navbar-nav>li.active>a:focus,
+	.navbar-default .navbar-nav>li.active>a:hover {
+		color: #555;
+		background-color: #fff;
+		border-top: 1px solid #bdbdbd;
+	}
+	.navbar-nav {
+		top: 71px;
+		right: 15px;
+		position: relative;
+	}
+	.navbar-nav:before {
+		content: "";
+		border-style: solid;
+		border-width: 40px 28px 0px 0;
+		border-color: transparent #252525 transparent transparent;
+		position: absolute;
+		left: -28px;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
